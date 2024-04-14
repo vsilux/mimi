@@ -15,3 +15,5 @@ export interface Post {
 	mainImage?: ImageAsset;
 	body: PortableTextBlock[];
 }
+
+

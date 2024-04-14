@@ -62,3 +62,37 @@ html {
 body {
 	margin: 0;
 }
+
+.header {
+	display: flex;
+	z-index: 10;
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 38px;
+	display: flex;
+	align-items: center;
+	font-size: var(--font-size-4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	filter: invert(1);
+	mix-blend-mode: difference;
+	background-color: transparent;
+
+}
+
+.header .header__title {
+	font-weight: 800;
+	font-size: var(--font-size-3);
+	line-height: var(--line-height-1);
+	padding-left: var(--space-2);
+	margin: var(--space-3) 0;
+	text-decoration: none;
+	color: var(--black);
+}
+
+.header .logo {
+	margin-left: var(--space-2)
+}
