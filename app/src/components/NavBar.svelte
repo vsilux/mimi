@@ -1,7 +1,6 @@
 <!-- NavigationBar.svelte -->
 
 <script lang="ts">
-	export let title = 'Navigation Bar';
 	interface Button {
 		label: string;
 		action: () => void; // Define action as a function type
@@ -28,8 +27,9 @@
 			/>
 		</svg>
 		<div class="nav_title">
-			<span style="font-weight: bold; color: black">Aircraft&nbsp;</span>
-			<span style="font-weight: light; color: black">Designs</span>
+			<span style="font-weight: 500; color: black">Aircraft&nbsp;</span><span
+				style="font-weight: 300; color: black">Designs</span
+			>
 		</div>
 	</div>
 	<div class="button-container">
@@ -70,7 +70,8 @@
 		cursor: pointer;
 		padding: 5px;
 		margin-right: 10px;
-		font: inherit; /* Inherits font styles from parent, including size and family */
+		font-weight: 400; /* Inherits font styles from parent, including size and family */
+		font-size: var(--font-size-2);
 		text-align: left; /* Aligns text inside button as if it were a link */
 		text-decoration: none; /* Optional: if you want underline on hover, add it here */
 	}

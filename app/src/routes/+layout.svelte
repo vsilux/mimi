@@ -7,15 +7,20 @@
 	}
 
 	let navButtons = [
-		{ label: 'Блок 1', action: () => scrollTo('block1') },
-		{ label: 'Блок 2', action: () => scrollTo('block2') },
-		{ label: 'Блок 3', action: () => scrollTo('block3') }
+		// { label: 'Блок 1', action: () => scrollTo('block1') },
+		// { label: 'Блок 2', action: () => scrollTo('block2') },
+		// { label: 'Блок 3', action: () => scrollTo('block3') }
+		{ label: 'Contacts & Manuals', action: () => scrollTo('block') }
 	];
-	let navTitle = '<span style="font-weight: bold; color: black">Aircraft&nbsp;</span> Designs';
 </script>
 
+<svelte:head>
+	<title>Aircraft Designs</title>
+	<meta name="description" content="Aircraft designs home page" />
+</svelte:head>
+
 <div class="container">
-	<NavBar title={navTitle} buttons={navButtons} />
+	<NavBar buttons={navButtons} />
 	<main>
 		<section id="block1" class="block" style="background-color: black;">
 			<!-- Tomato -->
@@ -46,7 +51,7 @@
 	}
 
 	.block {
-		min-height: 100vh; /* Мінімальна висота кожного блоку - 100% від висоти вікна переглядача */
+		height: 1200px; /* Мінімальна висота кожного блоку - 100% від висоти вікна переглядача */
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -54,5 +59,6 @@
 		padding: 20px;
 		box-sizing: border-box;
 		text-align: center;
+		transform: translateZ(0);
 	}
 </style>

@@ -10,9 +10,7 @@
 	--space-8: 136px;
 	--space-9: 220px;
 
-	--font-family-sans: Inter;
-	--font-family-serif: PT Serif;
-	--font-family-mono: IBM Plex Mono;
+	--font-family: PP Neue Montreal;
 
 	--font-size-0: 12px;
 	--font-size-1: 14px;
@@ -53,7 +51,7 @@
 
 html {
 	background-color: var(--white);
-	font-family: var(--font-family-sans), var(--font-family-serif), sans-serif;
+	font-family: var(--font-family), sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	text-size-adjust: 100%;

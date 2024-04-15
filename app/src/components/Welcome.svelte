@@ -1,10 +1,4 @@
 <div class="welcome__container">
-	<div class="logos">
-		<div class="logos__blur" />
-		<img class="logos__entry" src="/svelte.svg" alt="Svelte Logo" />
-		<span class="logos__plus">+</span>
-		<img class="logos__entry" src="/sanity.svg" alt="Sanity Logo" />
-	</div>
 	<div class="steps">
 		<h2 class="steps__title">Next steps</h2>
 		<ul class="steps__list">
@@ -89,36 +83,6 @@
 	@media (min-width: 575px) {
 		.welcome__container {
 			width: 100%;
-		}
-
-		.logos {
-			display: flex;
-			align-items: center;
-			margin: var(--space-6) 0 var(--space-5) 0;
-		}
-
-		.logos .logos__blur {
-			display: flex;
-			position: absolute;
-			width: 375px;
-			height: 115px;
-			background: var(--magenta-100);
-			filter: blur(82px);
-			transform: rotate(-19deg);
-			z-index: -1;
-		}
-
-		.logos .logos__plus {
-			display: flex;
-			font-family: var(--font-family-sans);
-			font-weight: 800;
-			font-size: var(--font-size-7);
-			line-height: var(--line-height-6);
-			margin: 0 var(--space-4);
-		}
-
-		.logos .logos__entry {
-			display: flex;
 		}
 
 		.steps {
